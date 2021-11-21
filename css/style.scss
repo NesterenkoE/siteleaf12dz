@@ -1,0 +1,321 @@
+@import "reset.scss";
+@import "menu.css";
+
+html *{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {  /* параменты и размер страницы */
+    width: 78%;
+    margin: 0 auto;
+    text-align: center;
+
+// ----Start Header---- 
+    .header { 
+        display: flex;  /* параменты верхней части страницы */
+        flex-direction: column; /* задаю для разположение вниз */
+        align-items: center; /* выравнивание по центру  */
+        border-bottom: 2px solid #d2d2d2;
+        .header__menu { 
+            display: flex;
+            justify-content: center;
+            .header-menu__list {
+                width: 50%;
+                display: flex;
+                justify-content: center; /* выравнивание по центру  */
+                align-items: center; /* выравнивание по центру  */
+                .menu-list__item {
+                    list-style: none; /* убрать параметры маркеров  */
+                    margin-left: 23px;
+                    padding: 18px 15px;
+                    font-size: 0;
+                    &:hover {
+                        background-color: rgb(92, 92, 92); /* при наведении меняеться фон */
+                    }
+                    .menu-list__link {
+                        font-size: 15px;
+                        color: #000;
+                        text-decoration: none;
+                            &:hover {
+                                color: white;
+                            }
+                    }
+                }
+                
+            }
+        }
+        .header__item {
+            display: flex;  /* параменты верхней части страницы */
+            flex-direction: column; 
+            align-items: center; /* выравнивание по центру  */
+            padding: 142px 0 118px 0;
+            .header-item__logo { 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 150px;
+                background: #df6267; /* фон логитипа   */
+                border-radius: 50%; /* параментры для круга  */
+            }
+            .header-item__title {
+                .header-title__info {
+                    padding: 53px 0 0 0;
+                    font-size: 40px;
+                    text-transform: uppercase; /* Все символы текста становятся прописными (верхний регистр) */
+                }
+            }
+        }
+    }
+// ----End Header----  
+
+// ----Start Main----  
+    .main {
+        border-bottom: 2px solid #d2d2d2;
+        padding-top: 130px;
+        padding-bottom: 104px;
+        .main-item__title {
+            font-size: 25px;
+            letter-spacing: .5px;
+            padding-bottom: 22px;
+        }
+        .main-item__text {
+            font-size: 17.4px;
+            line-height: 35px;
+            color: #8b8989;
+        }
+    }
+// ----End Main----  
+
+// ----Start Container----  
+    .container {
+        padding-bottom: 55px;
+        border-bottom: 2px solid #d2d2d2;
+        .container__site {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 14px 66px 17px;
+            .container-item__title {
+                .container-title__info {
+                    font-family: 'Times New Roman', Times, serif;   
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: #000;
+                }
+            }
+            .container-item__info {
+                .container-info__text {
+                    font-size: 17.8px;
+                    color: #000;
+                }
+            }
+        }
+        .gallery {
+            padding-bottom: 64px;
+            a {
+                img {
+                width: 32%;
+                padding-right: 18px;
+                padding-bottom: 66px;
+                transition: all .5s;
+                    &:hover {
+                        transform: scale(1.04);
+                    }
+                }
+            }
+        }
+        .container__information {
+            .container__button {
+                padding: 20px 75px;
+                background-color: #df6267;
+                border-radius: 5px;
+                font-family: 'Times New Roman', Times, serif;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold; /* устанавливает начертание шрифта. */
+                text-decoration: none;
+                transition: all 0.5s;
+            }
+            .container__title {
+                font-size: 25px;
+                letter-spacing: .4px; /* Определяет интервал между символами в пределах элемента. */
+                padding: 33px 0 1px 0;
+            }
+            .container__info {
+                font-size: 17.4px;
+                line-height: 70px; /* устанавливает величину пространства между строками */
+                color: #8b8989;
+            }
+            .container__text {
+                font-size: 17.4px;
+                line-height: 35px; /* устанавливает величину пространства между строками */
+                color: #8b8989;
+            }
+        }
+    }
+// ----End Container---
+
+// ----Start Secondary---
+    .secondary {
+        padding-top: 92px;
+        padding-bottom: 54px;
+        border-bottom: 2px solid #d2d2d2;
+        .secondary__information {
+            .secondary__button {
+                padding: 24px 95px; 
+                background-color: #df6267;
+                border-radius: 5px;
+                font-family: 'Times New Roman', Times, serif; /* смена шрифта по макету */
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: none;
+                transition: all 0.5s;
+            }
+            .secondary__title {
+                font-size: 25px;
+                letter-spacing: .4px;
+                padding: 30px 0 15px 0;
+            }
+            .secondary__info {
+                font-size: 17.4px;
+                line-height: 72px;
+                color: #8b8989;
+            }
+            .secondary__text {
+                font-size: 17.4px;
+                line-height: 35px;
+                color: #8b8989;
+            }
+        }
+    }
+// ----End Secondary---
+
+// ----Start Content---
+    .content {
+        padding-top: 65px;
+        padding-bottom: 54px;
+        border-bottom: 2px solid #d2d2d2;
+        .content__information {
+            .content__button {
+                padding: 24px 95px; 
+                background-color: #df6267;
+                border-radius: 5px;
+                font-family: 'Times New Roman', Times, serif; /* смена шрифта по макету */
+                color: #fff; /* цвет шрифта по макету */
+                font-size: 18px;
+                font-weight: bold; /* устанавливает начертание шрифта. */
+                text-decoration: none;
+                transition: all 0.5s;
+            }
+            .content__title {
+                font-size: 20px;
+                letter-spacing: .4px;
+                padding: 42px 0 15px 0;
+            }
+            .content__info {
+                font-size: 17.4px;
+                line-height: 72px;
+                color: #8b8989;
+            }
+            .content__text {
+                font-size: 17.4px;
+                line-height: 35px;
+                color: #8b8989;
+            }
+        }
+    }
+// ----End Content---
+
+// ----Start Footer---
+    .footer {
+        width: 63%;
+        margin: 0 auto;
+        padding-bottom: 53px;
+        .footer__menu {
+            padding-top: 60px;
+            .footer-menu__list {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                font-size: 0;
+                margin-left: 40px;
+                .footer-menu__link a {
+                    font-size: 16px;
+                    color: blue;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border-radius: 15px;
+                }
+            }
+        }
+        .footer__info {
+            font-size: 16px;
+            padding-top: 60px;
+        }
+        .footer__info {
+            font-size: 16px;
+            padding-top: 60px;
+        }
+    }
+// ----End Footer---
+
+}
+
+@media screen and (max-width: 905px) {
+    .wrapper .header .header__item .header-item__title .header-title__info {
+        font-size: 35px;
+      }
+
+      .wrapper .container .container__site {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .wrapper .container .gallery {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .wrapper .container .gallery a img {
+        width: 100%;
+        overflow: hidden;
+      }
+
+}   
+
+@media screen and (max-width: 600px) {
+    .wrapper .header .header__item .header-item__title .header-title__info {
+        font-size: 35px;
+      }
+
+      .wrapper .container .container__site {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .wrapper .container .gallery {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .wrapper .container .gallery a img {
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      .wrapper .header .header__menu .header-menu__list {
+          display: none;
+      }
+
+      #menuToggle {
+          display: block;
+      }
+}   
+
+
+
